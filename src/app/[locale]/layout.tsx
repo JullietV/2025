@@ -46,9 +46,9 @@ export default async function LocaleLayout({
   return (
     <html 
       lang={locale} 
-      className={`h-full ${poppins.variable} ${zillaSlab.variable} ${playwriteHu.variable}`}
+      className={`${poppins.variable} ${zillaSlab.variable} ${playwriteHu.variable}`}
     >
-      <body className="h-full font-sans antialiased bg-background text-foreground">
+      <body className="font-sans antialiased bg-background text-foreground">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Nav />
           {children}

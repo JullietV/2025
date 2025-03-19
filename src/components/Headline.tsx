@@ -43,11 +43,25 @@ export default function Headline() {
   }, []);
 
   return (
-    <h1 
-      ref={headlineRef}
-      className="bg-gradient-to-r from-blue-600 to-green-500 inline-block text-transparent bg-clip-text font-playwrite-hu text-8xl font-bold"
+    <div className="relative">
+      <div className="absolute top-0 left-[-25px] text-slate-400 text-sm h-[1px] w-[25px] bg-slate-200"></div>
+      <div className="absolute bottom-0 left-[-25px] text-slate-400 text-sm h-[1px] w-[25px] bg-slate-200"></div>
+      <div className="absolute bottom-0 right-[-25px] text-slate-400 text-sm h-[1px] w-[25px] bg-slate-200"></div>
+      <div className="absolute top-0 right-[-25px] text-slate-400 text-sm h-[1px] w-[25px] bg-slate-200"></div>
+      <div className="absolute top-0 right-[-25px] text-slate-400 text-sm h-[1px] w-[25px] bg-slate-200"></div>
+      <div className="absolute bottom-[-25px] right-[0] text-slate-400 text-sm h-[25px] w-[1px] bg-slate-200"></div>
+      <div className="absolute bottom-[-25px] left-[0] text-slate-400 text-sm h-[25px] w-[1px] bg-slate-200"></div>
+      <div className="absolute top-0 left-[-25px] text-slate-400 text-sm">
+        <span className="text-slate-400 text-sm">h1</span>
+      </div>
+
+      <h1 
+        ref={headlineRef}
+        className="bg-gradient-to-r from-purple-300 to-indigo-500 inline-block text-transparent bg-clip-text font-playwrite-hu text-8xl font-bold p-4 border-y border-slate-200 headline-before relative"
     >
-      {t('Experiences that connect')} ✨
-    </h1>
+      
+        {t('Experiences that connect')} ✨
+      </h1>
+    </div>
   );
 }

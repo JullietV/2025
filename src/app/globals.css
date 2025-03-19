@@ -8,6 +8,8 @@
   --font-sans: var(--font-zilla-slab, serif);
   --font-mono: var(--font-poppins, sans-serif);
   --font-playwrite-hu: var(--font-playwrite-hu, serif);
+  --color-violet-200: rgb(221 214 254);
+  --color-pink-200: rgb(251 207 232);
 }
 
 @layer utilities {
@@ -49,4 +51,79 @@ h6 {
 
 .font-playwrite-hu {
   font-family: var(--font-playwrite-hu);
+}
+
+@keyframes floatSlow {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, 25px);
+  }
+  50% {
+    transform: translate(25px, 50px);
+  }
+  75% {
+    transform: translate(-25px, 25px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes floatMedium {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(-100px, 50px);
+  }
+  50% {
+    transform: translate(-50px, -100px);
+  }
+  75% {
+    transform: translate(50px, -50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes floatFast {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(50px, -50px);
+  }
+  50% {
+    transform: translate(100px, 50px);
+  }
+  75% {
+    transform: translate(-50px, 100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.float-slow {
+  animation: floatSlow 15s ease-in-out infinite;
+}
+
+.float-medium {
+  animation: floatMedium 8s ease-in-out infinite;
+}
+
+.float-fast {
+  animation: floatFast 4s ease-in-out infinite;
+}
+
+@keyframes infinite-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+.infinite-scroll {
+  animation: infinite-scroll 50s linear infinite;
 }
