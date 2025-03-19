@@ -27,13 +27,20 @@ export function generateStaticParams() {
   return [{ locale: 'en' }, { locale: 'es' }];
 }
 
-export default async function LocaleLayout({ 
-  children,
-  params: { locale }
-}: {
+interface Props {
   children: React.ReactNode;
-  params: { locale: string };
-}) {
+  params: Promise<{ locale: string }>;
+}
+
+export default async function LocaleLayout({ children, params }: Props) {
+  // Esperamos a que los parámetros estén disponibles
+  const resolvedParams = await params;
+  const locale = resolvedParams.locale;
+  
+  if (!['es', 'en'].includes(locale)) {
+    notFound();
+  }
+
   let messages;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
@@ -50,7 +57,7 @@ export default async function LocaleLayout({
     >
       <body className="font-sans antialiased bg-background text-foreground">
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Nav />
+          <Nav locale={locale} />
           {children}
         </NextIntlClientProvider>
       </body>

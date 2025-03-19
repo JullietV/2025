@@ -1,0 +1,23 @@
+{
+  "projects": [
+    {
+      "id": "project-1",
+      "title": "Mi Proyecto Web",
+      "description": "Una aplicación web moderna construida con Next.js",
+      "technologies": ["Next.js", "TypeScript", "Tailwind CSS"],
+      "imageUrl": "/images/project-1.jpg",
+      "githubUrl": "https://github.com/usuario/proyecto",
+      "liveUrl": "https://mi-proyecto.com",
+      "details": {
+        "challenge": "Crear una interfaz responsive y accesible",
+        "solution": "Implementación de Tailwind CSS y mejores prácticas de accesibilidad",
+        "features": [
+          "Diseño responsive",
+          "Modo oscuro",
+          "Optimización de imágenes"
+        ]
+      },
+      "createdAt": "2024-03-20"
+    }
+  ]
+} 
