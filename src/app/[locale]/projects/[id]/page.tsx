@@ -1,4 +1,4 @@
-import { getProjectById } from '@/lib/projects'
+import { getProjectById, getAdjacentProjects } from '@/lib/projects'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -8,6 +8,7 @@ export default async function ProjectPage({
   params: { id: string; locale: string } 
 }) {
   const project = await getProjectById(id)
+  const { prevProject, nextProject } = await getAdjacentProjects(id)
 
   if (!project) {
     notFound()
@@ -95,6 +96,31 @@ export default async function ProjectPage({
         </div>
       </div>
       
+      <div className="flex justify-between items-center mt-12 border-t pt-8">
+        {prevProject ? (
+          <Link
+            href={`/es/projects/${prevProject.id}`}
+            className="flex items-center gap-2 text-slate-500 hover:text-indigo-500"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            <span>Proyecto anterior: {prevProject.title}</span>
+          </Link>
+        ) : <div />}
+
+        {nextProject ? (
+          <Link
+            href={`/es/projects/${nextProject.id}`}
+            className="flex items-center gap-2 text-slate-500 hover:text-indigo-500"
+          >
+            <span>Proyecto siguiente: {nextProject.title}</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </Link>
+        ) : <div />}
+      </div>
     </article>
   )
 } 
