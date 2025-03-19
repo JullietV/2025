@@ -1,11 +1,16 @@
-'use client';
-
 import Headline from '@/components/Headline';
 import GradientOrb from '@/components/GradientOrb';
-import { useTranslations } from 'next-intl';
+import { getTranslations } from 'next-intl/server';
 import ProjectsGrid from '@/components/Projects/Grid';
-export default function Home() {
-  const t = useTranslations();
+import { getProjects } from '@/lib/projects'
+
+export default async function Home({
+  params: { locale }
+}: {
+  params: { locale: string }
+}) {
+  const t = await getTranslations();
+  const projects = await getProjects()
   
   return (
     <main className="relative overflow-hidden min-h-screen">
@@ -56,14 +61,12 @@ export default function Home() {
             <h2 className="border-t border-slate-200 p-4 text-5xl font-bold text-slate-400">
               {t('and I like to create')}
             </h2>
-            
           </div>
           <Headline />
         </div>
-        
       </div>
 
-      <ProjectsGrid />
+      <ProjectsGrid projects={projects} />
     </main>
   );
 } 

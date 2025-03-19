@@ -1,9 +1,32 @@
 {
   "projects": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Memento",
-      "description": "Description 1"
+      "description": "Una aplicación web moderna que demuestra la implementación de arquitecturas serverless y experiencias de usuario fluidas.",
+      "technologies": [
+        "React",
+        "Firebase",
+        "TailwindCSS",
+        "Vercel"
+      ],
+      "imageUrl": "/projects/memento/inicio.png",
+      "githubUrl": "https://github.com/JullietV/react34785",
+      "liveUrl": "https://memento-blue.vercel.app/",
+      "details": {
+        "challenge": "Desarrollar una aplicación web moderna de principio a fin con arquitectura serverless y experiencia de usuario intuitiva",
+        "solution": "Implementación de React con Firebase para backend serverless, diseño responsive con TailwindCSS y despliegue en Vercel",
+        "features": [
+          "Autenticación de usuarios con Google",
+          "CRUD de notas en tiempo real",
+          "Diseño adaptativo",
+          "Sistema de temas claro/oscuro",
+          "Organización por colores",
+          "Sincronización en tiempo real",
+          "Interfaz minimalista"
+        ]
+      },
+      "createdAt": "2024-03-20"
     }
   ]
 }
