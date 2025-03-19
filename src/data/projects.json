@@ -34,6 +34,42 @@
       "role": ["Desarrolladora front, diseñadora UX/UI"],
       "purpose": "Proyecto final destacado del curso de Desarrollo Frontend con React en Coderhouse, obteniendo la máxima calificación",
       "createdAt": "2022-11-27"
+    },
+    {
+      "id": "2",
+      "title": "Nely AI",
+      "description": "Plataforma SaaS que integra inteligencia artificial para la gestión automatizada de conversaciones en WhatsApp, enfocada en optimizar la atención al cliente y las ventas para diversos sectores empresariales.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "TailwindCSS",
+        "OpenAI",
+        "WhatsApp Business API"
+      ],
+      "coverImage": "/projects/nely/cover.png",
+      "images": [
+        "/projects/nely/nely_laptop.png",
+        "/projects/nely/cover.png"
+        
+      ],
+      "githubUrl": null,
+      "liveUrl": "https://nely.ai/es/",
+      "details": {
+        "challenge": "Crear una interfaz intuitiva y accesible para un producto tecnológicamente complejo, manteniendo el equilibrio entre funcionalidad y simplicidad",
+        "solution": "Implementación de un diseño centrado en el usuario con énfasis en la claridad de la comunicación y la facilidad de uso, complementado con UX writing efectivo",
+        "features": [
+          "Gestión centralizada de conversaciones de WhatsApp",
+          "Sistema de respuestas automáticas con IA",
+          "Campañas de marketing automatizadas",
+          "Dashboard analítico",
+          "Integración con CRM",
+          "Sistema de asignación automática de conversaciones",
+          "Soporte multiidioma"
+        ]
+      },
+      "role": ["Diseñadora UX/UI", "UX Writer", "Desarrolladora front ocasional"],
+      "purpose": "Optimizar la experiencia de usuario y la comunicación del producto, facilitando la adopción de tecnología compleja por parte de usuarios empresariales",
+      "createdAt": "2024-05-15"
     }
   ]
 }

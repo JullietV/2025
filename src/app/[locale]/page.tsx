@@ -13,30 +13,8 @@ export default async function Home({
   const projects = await getProjects()
   
   return (
-    <main className="relative overflow-hidden min-h-screen">
-      <div className="fixed inset-0 overflow-hidden">
-        <GradientOrb 
-          from="tw-violet-200"
-          to="tw-pink-200"
-          size="w-[600px] h-[600px]"
-          position="top-[-10%] right-[-10%]"
-          animation="float-medium"
-        />
-        <GradientOrb 
-          from="tw-blue-200"
-          to="tw-purple-200"
-          size="w-[400px] h-[400px]"
-          position="bottom-[-10%] left-[-5%]"
-          animation="float-medium"
-        />
-        <GradientOrb 
-          from="tw-green-200"
-          to="tw-indigo-200"
-          size="w-[300px] h-[300px]"
-          position="top-[60%] left-[20%]"
-          animation="float-fast"
-        />
-      </div>
+    <main className="min-h-screen">
+      
       <div className="relative z-10 flex flex-col items-start justify-center h-[calc(100vh-300px)] mx-auto w-[1400px] max-w-full">
         <div className="border-x border-slate-200">
           <div className="relative">

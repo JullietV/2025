@@ -71,13 +71,13 @@ export default async function ProjectPage({
               >
                 Demo
               </Link>
-              <Link
+              {project.githubUrl && <Link
                 href={project.githubUrl}
                 target="_blank"
                 className="text-4xl font-bold hover:text-indigo-500 underline"
               >
                 Código fuente
-              </Link>
+              </Link>}
               
             </div>
             
