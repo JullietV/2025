@@ -45,7 +45,7 @@ export default function Headline() {
   return (
     <h1 
       ref={headlineRef}
-      className="bg-gradient-to-r from-blue-600 to-green-500 inline-block text-transparent bg-clip-text font-playwrite-hu text-8xl font-bold"
+      className="bg-gradient-to-r from-purple-300 to-indigo-500 inline-block text-transparent bg-clip-text font-playwrite-hu text-8xl font-bold"
     >
       {t('Experiences that connect')} ✨
     </h1>
