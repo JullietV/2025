@@ -3,7 +3,7 @@
 import Headline from '@/components/Headline';
 import GradientOrb from '@/components/GradientOrb';
 import { useTranslations } from 'next-intl';
-
+import ProjectsGrid from '@/components/Projects/Grid';
 export default function Home() {
   const t = useTranslations();
   
@@ -32,7 +32,7 @@ export default function Home() {
           animation="float-fast"
         />
       </div>
-      <div className="relative z-10 flex flex-col items-start justify-center h-screen mx-auto w-[1400px] max-w-full">
+      <div className="relative z-10 flex flex-col items-start justify-center h-[calc(100vh-200px)] mx-auto w-[1400px] max-w-full">
         <h2 className="text-3xl font-bold text-slate-400">
           {t('Hello, Im Julls!')}        
         </h2>
@@ -41,6 +41,8 @@ export default function Home() {
         </h3>
         <Headline />
       </div>
+
+      <ProjectsGrid />
     </main>
   );
 } 
