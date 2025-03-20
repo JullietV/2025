@@ -50,8 +50,7 @@ export default async function LocaleLayout({ children, params }: Props) {
 
   return (
     <html 
-      lang={locale} 
-      data-theme="light"
+      lang={locale}
       className={`${poppins.variable} ${zillaSlab.variable} ${playwriteHu.variable}`}
     >
       <head>

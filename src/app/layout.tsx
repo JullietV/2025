@@ -3,15 +3,11 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  return (
-    <html lang="es">
-      <body>{children}</body>
-    </html>
-  );
+  return children;
 }
 
 // Metadata requerida para Next.js
 export const metadata = {
-  title: 'Mi Aplicación',
-  description: 'Descripción de mi aplicación',
+  title: 'Portafolio | Julliet V.',
+  description: 'Portafolio personal de Julliet V. - UX Engineer',
 }; 
