@@ -9,7 +9,7 @@ export default function Headline() {
   const headlineRef = useRef<HTMLHeadingElement | null>(null);
 
   useEffect(() => {
-    let ctx = gsap.context(() => {
+    const ctx = gsap.context(() => {
       const text = headlineRef.current;
       const chars = text?.textContent?.split('');
       
