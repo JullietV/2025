@@ -3,13 +3,14 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 
-interface PageProps {
-  params: { id: string; locale: string }
-  searchParams?: { [key: string]: string | string[] | undefined }
-}
 
-export default async function ProjectPage({ params }: PageProps) {
-  const { id } = params;
+export default async function ProjectPage({
+  params,
+}: { params: { id: string; locale: string } }) {
+  const { id, locale } = params;
+
+  console.log("Params recibidos en Vercel:", params);
+  
   
   const project = await getProjectById(id)
   const { prevProject, nextProject } = await getAdjacentProjects(id)
