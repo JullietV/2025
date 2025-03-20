@@ -16,7 +16,7 @@ export default async function Home({
     <main className="min-h-screen">
       
       <div className="relative z-10 flex flex-col items-start justify-center h-[calc(100vh-300px)] mx-auto w-[1400px] max-w-full">
-        <div className="border-x border-slate-200">
+        <div className="border-x border-slate-200 px-10 md:px-0">
           <div className="relative">
             <div className="absolute top-0 left-[-25px] text-slate-400 text-sm h-[1px] w-[25px] bg-slate-200"></div>
             <div className="absolute bottom-0 left-[-25px] text-slate-400 text-sm h-[1px] w-[25px] bg-slate-200"></div>
@@ -28,7 +28,7 @@ export default async function Home({
             <div className="absolute top-0 left-[-25px] text-slate-400 text-sm">
               <span className="text-slate-400 text-sm">h3</span>
             </div>
-            <h3 className="border-t border-slate-200 p-4 text-3xl font-bold text-slate-400">
+            <h3 className="border-t border-slate-200 p-4 text-2xl md:text-3xl font-bold text-slate-400">
               {t('Hello, Im Julls!')}        
             </h3>
           </div>
@@ -36,7 +36,7 @@ export default async function Home({
             <div className="absolute top-0 left-[-25px] text-slate-400 text-sm">
               <span className="text-slate-400 text-sm">h2</span>
             </div>
-            <h2 className="border-t border-slate-200 p-4 text-5xl font-bold text-slate-400">
+            <h2 className="border-t border-slate-200 p-4 text-3xl md:text-5xl font-bold text-slate-400">
               {t('and I like to create')}
             </h2>
           </div>
