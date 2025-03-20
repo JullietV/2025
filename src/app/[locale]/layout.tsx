@@ -1,4 +1,3 @@
-
 import { NextIntlClientProvider } from 'next-intl';
 import { notFound } from 'next/navigation';
 
@@ -35,7 +34,6 @@ interface Props {
 }
 
 export default async function LocaleLayout({ children, params }: Props) {
-  // Esperamos a que los parámetros estén disponibles
   const resolvedParams = await params;
   const locale = resolvedParams.locale;
   
@@ -46,11 +44,9 @@ export default async function LocaleLayout({ children, params }: Props) {
   let messages;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
-  } catch (error) {
+  } catch (_error) {
     notFound();
   }
-
-  console.log(Object.keys(require('next/font/google')));
 
   return (
     <html 
