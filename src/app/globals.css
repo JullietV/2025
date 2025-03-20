@@ -125,5 +125,5 @@ h6 {
 }
 
 .infinite-scroll {
-  animation: infinite-scroll 50s linear infinite;
+  animation: infinite-scroll 100s linear infinite;
 }

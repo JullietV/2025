@@ -14,3 +14,14 @@ export async function getProjectById(id: string): Promise<Project | null> {
   const projects = await getProjects()
   return projects.find(project => project.id === id) || null
 } 
+
+export async function getAdjacentProjects(currentId: string) {
+  const projects = await getProjects()
+  
+  const currentIndex = projects.findIndex(p => p.id === currentId)
+  
+  return {
+    prevProject: currentIndex > 0 ? projects[currentIndex - 1] : null,
+    nextProject: currentIndex < projects.length - 1 ? projects[currentIndex + 1] : null
+  }
+} 
