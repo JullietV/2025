@@ -4,14 +4,6 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Metadata } from 'next'
 
-interface PageProps {
-  params?: {
-    id: string;
-    locale: string;
-  };
-  searchParams?: { [key: string]: string | string[] | undefined };
-}
-
 type Props = {
   params: Promise<{ id: string; locale: string }>
   searchParams: Promise<{ [key: string]: string | string[] | undefined }>
