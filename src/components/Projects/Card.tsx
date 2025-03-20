@@ -11,7 +11,7 @@ export default function ProjectCard({ project, locale }: ProjectCardProps) {
     <Link href={`/${locale}/projects/${project.id}`}>
       <div className="border rounded-lg p-4 hover:shadow-lg transition-shadow">
         <img 
-          src={project.imageUrl} 
+          src={project.coverImage} 
           alt={project.title}
           className="w-full h-48 object-cover rounded-md"
         />
