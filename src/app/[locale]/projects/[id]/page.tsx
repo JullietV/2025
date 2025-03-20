@@ -9,7 +9,7 @@ export default async function ProjectPage({
 }: { params: { id: string; locale: string } }) {
   const { id, locale } = params;
 
-  console.log("Params recibidos en Vercel:", params);
+  console.log("Params recibidos en Vercel:", params, locale);
   
   
   const project = await getProjectById(id)
