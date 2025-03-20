@@ -1,10 +1,10 @@
 'use client';
 
 import { motion, AnimatePresence } from 'framer-motion';
-import { ReactNode } from 'react';
+import { ReactNode, Suspense } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
 
-export default function PageTransition({ children }: { children: ReactNode }) {
+function PageTransitionContent({ children }: { children: ReactNode }) {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const direction = searchParams.get('direction') || 'none';
@@ -41,5 +41,13 @@ export default function PageTransition({ children }: { children: ReactNode }) {
         {children}
       </motion.main>
     </AnimatePresence>
+  );
+}
+
+export default function PageTransition({ children }: { children: ReactNode }) {
+  return (
+    <Suspense fallback={null}>
+      <PageTransitionContent>{children}</PageTransitionContent>
+    </Suspense>
   );
 } 
