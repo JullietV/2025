@@ -70,6 +70,75 @@
       "role": ["Diseñadora UX/UI", "UX Writer", "Desarrolladora front ocasional"],
       "purpose": "Optimizar la experiencia de usuario y la comunicación del producto, facilitando la adopción de tecnología compleja por parte de usuarios empresariales",
       "createdAt": "2024-05-15"
+    },
+    {
+      "id": "3",
+      "title": "Adulting",
+      "description": "Análisis exhaustivo de usabilidad y diseño de una aplicación enfocada en habilidades sociales, utilizando Design Thinking y metodologías de investigación UX para fundamentar cada decisión de diseño en datos reales de usuarios.",
+      "technologies": [
+        "Figma",
+        "Design Thinking",
+        "UX Research",
+        "Análisis Heurístico",
+        "Entrevistas Cualitativas",
+        "User Testing",
+        "Metodologías de Usabilidad"
+      ],
+      "coverImage": "/projects/adulting/cover.png",
+      "images": [
+        "/projects/adulting/adulting_mockup.png",
+        "/projects/adulting/cover.png"
+      ],
+      "githubUrl": null,
+      "liveUrl": "https://www.figma.com/proto/wkxzkdnyMHnwEyKw0xwnj7/ReporteUX?page-id=0%3A1&node-id=52-2844",
+      "details": {
+        "challenge": "Identificar y resolver una problemática social común mediante el diseño de una solución digital, partiendo desde la investigación del problema hasta la creación de una solución centrada en el usuario",
+        "solution": "Desarrollo de una aplicación original desde cero siguiendo la metodología Design Thinking, fundamentando cada decisión en datos obtenidos a través de investigación con usuarios reales",
+        "features": [
+          "Investigación cualitativa y entrevistas a profundidad",
+          "Validación de problemáticas con usuarios reales",
+          "Prototipos iterativos y testing",
+          "Journey maps basados en datos",
+          "Metodología Design Thinking completa"
+        ]
+      },
+      "role": ["UX Researcher", "Diseñadora UX/UI", "Diseñadora de Información"],
+      "purpose": "Crear una solución digital innovadora para un problema social común, demostrando un proceso completo de investigación y diseño donde cada decisión está fundamentada en datos reales",
+      "createdAt": "2023-05-05"
+    },
+    {
+      "id": "4",
+      "title": "RendaloMaq",
+      "description": "Plataforma digital para el arriendo y venta de maquinaria pesada, facilitando la conexión entre proveedores y clientes del sector construcción e industrial en Chile.",
+      "technologies": [
+        "React",
+        "Node.js",
+        "TailwindCSS",
+        "PostgreSQL",
+        "AWS",
+        "Pasarelas de pagos"
+      ],
+      "coverImage": "/projects/rendalomaq/cover.png",
+      "images": [
+        "/projects/rendalomaq/rendalo_mockup.png",
+        "/projects/rendalomaq/cover.png"
+      ],
+      "githubUrl": null,
+      "liveUrl": "https://rendalomaq.com/es-CL",
+      "details": {
+        "challenge": "Crear una plataforma digital que simplifique el proceso de arriendo y venta de maquinaria pesada, tradicionalmente complejo y poco digitalizado",
+        "solution": "Desarrollo de un marketplace especializado con sistema de cotización en línea, gestión de inventario y proceso de arriendo simplificado",
+        "features": [
+          "Cotización en línea de maquinaria",
+          "Catálogo digital categorizado",
+          "Panel de gestión para proveedores",
+          "Sistema de pagos integrado",
+          "Gestión de disponibilidad en tiempo real"
+        ]
+      },
+      "role": ["Desarrolladora Frontend", "Diseñadora UX/UI"],
+      "purpose": "Digitalizar y optimizar el proceso de arriendo y venta de maquinaria pesada en Chile, mejorando la eficiencia del sector",
+      "createdAt": "2023-06-24"
     }
   ]
 }

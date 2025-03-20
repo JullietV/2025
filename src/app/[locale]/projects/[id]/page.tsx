@@ -99,7 +99,7 @@ export default async function ProjectPage({
       <div className="flex justify-between items-center mt-12 border-t pt-8">
         {prevProject ? (
           <Link
-            href={`/es/projects/${prevProject.id}`}
+            href={`/es/projects/${prevProject.id}?direction=prev`}
             className="flex items-center gap-2 text-slate-500 hover:text-indigo-500"
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -111,7 +111,7 @@ export default async function ProjectPage({
 
         {nextProject ? (
           <Link
-            href={`/es/projects/${nextProject.id}`}
+            href={`/es/projects/${nextProject.id}?direction=next`}
             className="flex items-center gap-2 text-slate-500 hover:text-indigo-500"
           >
             <span>Proyecto siguiente: {nextProject.title}</span>

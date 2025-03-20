@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function ProjectCard({ id, project }: { id: number | string, project?: Project }) {
   return (
     <Link href={`/es/projects/${id}`}>
-      <div className="rounded-xl bg-slate-400 w-[500px] h-[300px] overflow-hidden">
+      <div className="rounded-xl bg-slate-400 w-[500px] h-[300px] overflow-hidden shadow-lg border-1 border-gray-100">
         <img src={project?.coverImage} alt="Project 1" className="w-full h-full object-cover" />
       </div>
     </Link>

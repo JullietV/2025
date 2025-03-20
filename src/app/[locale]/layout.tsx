@@ -7,7 +7,7 @@ import { Poppins, Zilla_Slab, Playwrite_HU } from 'next/font/google';
 import '../globals.css';
 import Nav from '@/components/Layout/Nav';
 import GradientOrb from '@/components/GradientOrb';
-
+import PageTransition from '@/components/PageTransition';
 const poppins = Poppins({
   weight: ['400', '500', '600', '700'],
   subsets: ['latin'],
@@ -84,7 +84,9 @@ export default async function LocaleLayout({ children, params }: Props) {
           </div>  
           <NextIntlClientProvider locale={locale} messages={messages}>
             <Nav locale={locale} />
-            {children}
+            <PageTransition>
+              {children}
+            </PageTransition>
           </NextIntlClientProvider>
         </div>
       </body>
