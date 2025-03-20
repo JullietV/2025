@@ -4,5 +4,30 @@
   "and I like to create": "y me gusta crear",
   "Home": "Inicio",
   "About": "Sobre mí",
-  "Let's talk": "Hablemos"
+  "Let's talk": "Hablemos",
+  
+  "About me": "Sobre mí",
+  "About intro 1": "Soy una desarrolladora frontend y diseñadora UX/UI especializada en crear experiencias digitales que combinan innovación tecnológica con usabilidad intuitiva.",
+  "About intro 2": "Mi formación dual en desarrollo y diseño me permite aportar una perspectiva única a cada proyecto: no solo creo interfaces visualmente atractivas, sino que también garantizo su viabilidad técnica y óptimo rendimiento.",
+  
+  "Tech Stack": "Stack Tecnológico",
+  "Development": "Desarrollo",
+  "Design": "Diseño",
+  "Tools & AI": "Herramientas & IA",
+  
+  "Strengths": "Fortalezas",
+  "Specialized Frontend Development": "Desarrollo Frontend Especializado",
+  "Strength Frontend": "Me especializo en crear interfaces robustas y accesibles, con amplia experiencia en diversos frameworks de JavaScript y un sólido dominio de JavaScript vanilla para soluciones personalizadas.",
+  
+  "AI Integration": "Integración de IA",
+  "Strength AI": "Aprovecho eficientemente las herramientas de IA para optimizar el desarrollo, mejorar la calidad del código y acelerar la resolución de problemas, manteniendo siempre un criterio profesional en su aplicación.",
+  
+  "Effective Collaboration": "Colaboración Efectiva",
+  "Strength Collaboration": "Tengo experiencia trabajando en equipos multidisciplinarios, colaborando eficientemente con desarrolladores backend, diseñadores UX/UI, y product managers para llevar proyectos al éxito.",
+  
+  "Design and Development Bridge": "Puente entre Diseño y Desarrollo",
+  "Strength Bridge": "Mi comprensión tanto del diseño como del desarrollo me permite ser un enlace efectivo entre ambos mundos, asegurando que la visión del diseño se implemente fielmente sin comprometer el rendimiento técnico.",
+  
+  "Looking for collaboration?": "¿Buscas una colaboración?",
+  "Collaboration Message": "Me apasiona colaborar en proyectos desafiantes donde pueda aportar valor tanto en el aspecto técnico como en la experiencia de usuario. Si tienes un proyecto en mente, ¡me encantaría escucharlo!"
 } 

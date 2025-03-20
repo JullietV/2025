@@ -4,5 +4,30 @@
   "and I like to create": "and I like to create",
   "Home": "Home",
   "About": "About",
-  "Let's talk": "Let's talk"
+  "Let's talk": "Let's talk",
+  
+  "About me": "About me",
+  "About intro 1": "I'm a frontend developer and UX/UI designer specialized in creating digital experiences that combine technological innovation with intuitive usability.",
+  "About intro 2": "My dual background in development and design allows me to bring a unique perspective to each project: I not only create visually appealing interfaces but also ensure their technical viability and optimal performance.",
+  
+  "Tech Stack": "Tech Stack",
+  "Development": "Development",
+  "Design": "Design",
+  "Tools & AI": "Tools & AI",
+  
+  "Strengths": "Strengths",
+  "Specialized Frontend Development": "Specialized Frontend Development",
+  "Strength Frontend": "I specialize in creating robust and accessible interfaces, with extensive experience in various JavaScript frameworks and a solid command of vanilla JavaScript for custom solutions.",
+  
+  "AI Integration": "AI Integration",
+  "Strength AI": "I efficiently leverage AI tools to optimize development, improve code quality, and accelerate problem-solving, always maintaining professional judgment in their application.",
+  
+  "Effective Collaboration": "Effective Collaboration",
+  "Strength Collaboration": "I have experience working in multidisciplinary teams, efficiently collaborating with backend developers, UX/UI designers, and product managers to drive projects to success.",
+  
+  "Design and Development Bridge": "Design and Development Bridge",
+  "Strength Bridge": "My understanding of both design and development allows me to be an effective bridge between both worlds, ensuring that design vision is faithfully implemented without compromising technical performance.",
+  
+  "Looking for collaboration?": "Looking for collaboration?",
+  "Collaboration Message": "I'm passionate about collaborating on challenging projects where I can add value in both technical and user experience aspects. If you have a project in mind, I'd love to hear about it!"
 } 
