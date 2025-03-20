@@ -44,7 +44,7 @@ export default async function LocaleLayout({ children, params }: Props) {
   let messages;
   try {
     messages = (await import(`../../messages/${locale}.json`)).default;
-  } catch (_error) {
+  } catch (_) {
     notFound();
   }
 
