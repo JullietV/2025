@@ -3,17 +3,24 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 
+interface PageProps {
+  params?: {
+    id: string;
+    locale: string;
+  };
+  searchParams?: { [key: string]: string | string[] | undefined };
+}
 
 export default async function ProjectPage({
   params,
-}: { params: { id: string; locale: string } }) {
-  const { id, locale } = params;
+}: PageProps) {
+  
+  if (!params?.id) {
+    notFound()
+  }
 
-  console.log("Params recibidos en Vercel:", params, locale);
-  
-  
-  const project = await getProjectById(id)
-  const { prevProject, nextProject } = await getAdjacentProjects(id)
+  const project = await getProjectById(params?.id)
+  const { prevProject, nextProject } = await getAdjacentProjects(params?.id)
 
   if (!project) {
     notFound()
