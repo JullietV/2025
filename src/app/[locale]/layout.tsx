@@ -51,8 +51,13 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html 
       lang={locale} 
+      data-theme="light"
       className={`${poppins.variable} ${zillaSlab.variable} ${playwriteHu.variable}`}
     >
+      <head>
+        <title>Portafolio | Julliet V.</title>
+        <meta name="description" content="Portafolio personal de Julliet V. - UX Engineer" />
+      </head>
       <body className="font-sans antialiased bg-background text-foreground">
         <div className="relative">
           <div className="fixed inset-0 overflow-hidden z-[-1]">
