@@ -2,13 +2,36 @@ import { getProjectById, getAdjacentProjects } from '@/lib/projects'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
-export default async function ProjectPage({ 
-  params: { id } 
-}: { 
-  params: { id: string; locale: string } 
+import { Metadata } from 'next'
+
+type Props = {
+  params: Promise<{ id: string; locale: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
+}
+
+export async function generateMetadata(
+  { params }: Props,
+): Promise<Metadata> {
+  const { id } = await params
+
+  return {
+    title: `Proyecto ${id}`
+  }
+}
+
+export default async function ProjectPage({
+  params,
+}: {
+  params: Promise<{ id: string; locale: string }>
 }) {
-  const project = await getProjectById(id)
-  const { prevProject, nextProject } = await getAdjacentProjects(id)
+  const resolvedParams = await params
+  
+  if (!resolvedParams.id) {
+    notFound()
+  }
+
+  const project = await getProjectById(resolvedParams.id)
+  const { prevProject, nextProject } = await getAdjacentProjects(resolvedParams.id)
 
   if (!project) {
     notFound()

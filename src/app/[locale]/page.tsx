@@ -1,14 +1,10 @@
 import Headline from '@/components/Headline';
-import GradientOrb from '@/components/GradientOrb';
 import { getTranslations } from 'next-intl/server';
 import ProjectsGrid from '@/components/Projects/Grid';
 import { getProjects } from '@/lib/projects'
 
-export default async function Home({
-  params: { locale }
-}: {
-  params: { locale: string }
-}) {
+export default async function Home() {
+
   const t = await getTranslations();
   const projects = await getProjects()
   
