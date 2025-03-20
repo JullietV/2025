@@ -3,13 +3,14 @@ import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
 
-type Props = {
-  params: { id: string; locale: string }
+interface PageProps {
+  params: Promise<{ id: string; locale: string }>
   searchParams?: { [key: string]: string | string[] | undefined }
 }
 
-export default async function ProjectPage({ params }: Props) {
-  const { id } = params;
+export default async function ProjectPage({ params }: PageProps) {
+  const resolvedParams = await params;
+  const { id } = resolvedParams;
   
   const project = await getProjectById(id)
   const { prevProject, nextProject } = await getAdjacentProjects(id)
