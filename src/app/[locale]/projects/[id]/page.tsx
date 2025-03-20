@@ -2,11 +2,15 @@ import { getProjectById, getAdjacentProjects } from '@/lib/projects'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import Image from 'next/image'
+
 export default async function ProjectPage({ 
-  params: { id } 
+  params 
 }: { 
-  params: { id: string; locale: string } 
+  params: Promise<{ id: string; locale: string }> | { id: string; locale: string }
 }) {
+  const resolvedParams = await params;
+  const { id } = resolvedParams;
+  
   const project = await getProjectById(id)
   const { prevProject, nextProject } = await getAdjacentProjects(id)
 
